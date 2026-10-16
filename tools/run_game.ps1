@@ -3,6 +3,7 @@ param(
     [string]$GodotPath = '',
     [switch]$Editor,
     [switch]$Headless,
+    [switch]$SkipImport,
     [Alias('Frames')]
     [int]$QuitAfter = 0,
     [Parameter(ValueFromRemainingArguments = $true)]
@@ -40,6 +41,14 @@ if ($GameArguments.Count -gt 0) { $engineArguments += @('--') + $GameArguments }
 try {
     $env:APPDATA = $runtimeRoaming
     $env:LOCALAPPDATA = $runtimeLocal
+    if (-not $Editor -and -not $SkipImport) {
+        # Fresh source checkouts do not contain Godot's imported textures/audio.
+        $importLog = Join-Path $runtimeRoot 'launcher-import.log'
+        & $GodotPath --headless --path $projectRoot --editor --import --quit --log-file $importLog *> (Join-Path $runtimeRoot 'launcher-import.stdout.log')
+        if (($LASTEXITCODE -ne 0) -or (Select-String -LiteralPath $importLog -Pattern '^(SCRIPT ERROR:|ERROR:)' -Quiet)) {
+            throw "Project import failed. See $importLog"
+        }
+    }
     & $GodotPath @engineArguments
     $taskExitCode = $LASTEXITCODE
     if (Select-String -LiteralPath $engineLog -Pattern '^(SCRIPT ERROR:|ERROR:)' -Quiet) { $taskExitCode = 1 }

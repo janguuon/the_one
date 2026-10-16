@@ -1,0 +1,264 @@
+{
+  "schema": 1,
+  "sample_rate": 22050,
+  "format": "PCM16 stereo",
+  "generator": "tools/generate_audio.py",
+  "assets": {
+    "phase_1": {
+      "file": "phase_1.wav",
+      "frames": 352800,
+      "seconds": 16.0,
+      "peak": 0.26551950390001067,
+      "loop": true,
+      "sha256": "7f85c2afc3aafb8995d7472c24ba50feb470551c9fa6e55f0cec0bcf5e83339f"
+    },
+    "phase_2": {
+      "file": "phase_2.wav",
+      "frames": 352800,
+      "seconds": 16.0,
+      "peak": 0.36214159804223917,
+      "loop": true,
+      "sha256": "acd4ffb85a7ac53771b03d545f5de3a80459cad00e83a0e928505f86ebf5999e"
+    },
+    "phase_3": {
+      "file": "phase_3.wav",
+      "frames": 352800,
+      "seconds": 16.0,
+      "peak": 0.28879961547713584,
+      "loop": true,
+      "sha256": "1bf74a671f0b3a2fbb8ea5859db97cdaad6f0fc1eac1e108f28d79092473050d"
+    },
+    "phase_4": {
+      "file": "phase_4.wav",
+      "frames": 352800,
+      "seconds": 16.0,
+      "peak": 0.2911392680142974,
+      "loop": true,
+      "sha256": "558b156a73cb24f56737982586c7383df826b6e4c2007b1ef519cdc5e649a44f"
+    },
+    "phase_5": {
+      "file": "phase_5.wav",
+      "frames": 352800,
+      "seconds": 16.0,
+      "peak": 0.13056443962684627,
+      "loop": true,
+      "sha256": "394b1a37f74990ce4c141ead2400c8a56ee17d90c1e80e9229023ea12a12d950"
+    },
+    "attack_W01": {
+      "file": "attack_W01.wav",
+      "frames": 7938,
+      "seconds": 0.36,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "a07748079cfdb384077127f99dd319451ae2db5249ccbc1bac21edbc2111023d"
+    },
+    "hit_W01": {
+      "file": "hit_W01.wav",
+      "frames": 7497,
+      "seconds": 0.34,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "8c04ce9271e665788972c1954159bd4ca8a3d80b73a4334c5604c98220ffa014"
+    },
+    "attack_W02": {
+      "file": "attack_W02.wav",
+      "frames": 7938,
+      "seconds": 0.36,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "52ab837ea46cafff9fcc8535d5fc77452c482f8b51ea84c4ffa5aa337df529a1"
+    },
+    "hit_W02": {
+      "file": "hit_W02.wav",
+      "frames": 7497,
+      "seconds": 0.34,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "e7a5e54a4de91f80dd77175955aec3e83f5aad92fae63a218140f44895be47f3"
+    },
+    "attack_W03": {
+      "file": "attack_W03.wav",
+      "frames": 7938,
+      "seconds": 0.36,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "b544b116ba16a07425b2e8b594028f19f891d4eae88461249936850ce7a0cb11"
+    },
+    "hit_W03": {
+      "file": "hit_W03.wav",
+      "frames": 7497,
+      "seconds": 0.34,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "10f6b80be17a0e0d6357f4ffb8ed69b7b3cba91bbcf64d44be0db5ab3c085910"
+    },
+    "attack_W04": {
+      "file": "attack_W04.wav",
+      "frames": 12128,
+      "seconds": 0.5500226757369614,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "a433c0253836d20d10e0e23f00ff78c91877d5d309c664536ad672621f76840f"
+    },
+    "hit_W04": {
+      "file": "hit_W04.wav",
+      "frames": 13671,
+      "seconds": 0.62,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "22c8a23a8570097332956ddfbaba3d0c3b361f0851897dc94bb9fee3d7277274"
+    },
+    "attack_W05": {
+      "file": "attack_W05.wav",
+      "frames": 7938,
+      "seconds": 0.36,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "4df5434e700189cfd386da0f25502ceb122aa4bfac7f29a2392c5db004823510"
+    },
+    "hit_W05": {
+      "file": "hit_W05.wav",
+      "frames": 7497,
+      "seconds": 0.34,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "c0e9f34011b8401c1ed847c774f9fab5e075758615ade083cc28c8be614775d5"
+    },
+    "warning_preview": {
+      "file": "warning_preview.wav",
+      "frames": 4851,
+      "seconds": 0.22,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "91cc0c3bdad243979b7854696ad3df8ce786571a5c31f42d1ec4b74d4c29a557"
+    },
+    "warning_lock": {
+      "file": "warning_lock.wav",
+      "frames": 3969,
+      "seconds": 0.18,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "f234dd73ea9551fc343a14fcfc8c6c8d0ce913724d2d37eccb65306d853b1bda"
+    },
+    "warning_execute": {
+      "file": "warning_execute.wav",
+      "frames": 7497,
+      "seconds": 0.34,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "cbfa20ffb49fede3887d39706f09408c97cc432ed57ef5623a35ceb46155b7eb"
+    },
+    "warning_echo": {
+      "file": "warning_echo.wav",
+      "frames": 8379,
+      "seconds": 0.38,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "0669328476718fb512ff96b16526161aa35494c446e1a33ee468aed1d517a7d0"
+    },
+    "dodge": {
+      "file": "dodge.wav",
+      "frames": 6174,
+      "seconds": 0.28,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "d8eda7c8d2f92d76b371f2dcdea9272d44d3f0a4cd29465a15d3813ec74b8696"
+    },
+    "hurt": {
+      "file": "hurt.wav",
+      "frames": 11025,
+      "seconds": 0.5,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "06fff98bde12d0205eb2ec084edca8cacfc313dc0475ec0a93c58edba66488aa"
+    },
+    "pickup_fire": {
+      "file": "pickup_fire.wav",
+      "frames": 10584,
+      "seconds": 0.48,
+      "peak": 0.39799999999999996,
+      "loop": false,
+      "sha256": "a463171d3a1ba2d9513c43ac9650b3274ca8ec28729e54a4a29cae11681d1dbd"
+    },
+    "pickup_frost": {
+      "file": "pickup_frost.wav",
+      "frames": 13230,
+      "seconds": 0.6,
+      "peak": 0.39799999999999996,
+      "loop": false,
+      "sha256": "bc283cc202a8de375dd8a4008114238bbe1af212fb57fc2a2d44244cae7cd303"
+    },
+    "pickup_lightning": {
+      "file": "pickup_lightning.wav",
+      "frames": 7056,
+      "seconds": 0.32,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "808c4812d241a20f08d3ac798aa71417fe765b467f109a080af97f0df1aa48fb"
+    },
+    "pickup_void": {
+      "file": "pickup_void.wav",
+      "frames": 15435,
+      "seconds": 0.7,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "62cacd4dc42a74453e80128fd238b211c538389407bd01080f2bf9150e5e899e"
+    },
+    "transition": {
+      "file": "transition.wav",
+      "frames": 26460,
+      "seconds": 1.2,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "5546b7d15cf3a3bea2fb3f5f8212c45c4102b2b7c707e63cb32deb66b3cfc38d"
+    },
+    "death": {
+      "file": "death.wav",
+      "frames": 39690,
+      "seconds": 1.8,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "e31267d5abada0d94f41ffc5a397804e1d4578afba07e198caa28dad6175522d"
+    },
+    "victory": {
+      "file": "victory.wav",
+      "frames": 50715,
+      "seconds": 2.3,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "a5007b6503e79b0f90ac7852eedf0b1afdd2cdb44787fd8f2ad07abd029910d9"
+    },
+    "menu_move": {
+      "file": "menu_move.wav",
+      "frames": 2205,
+      "seconds": 0.1,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "25b29cb6abd90938087e0f98634d3b949e640d009e15e5d84146075483074a7e"
+    },
+    "menu_confirm": {
+      "file": "menu_confirm.wav",
+      "frames": 4851,
+      "seconds": 0.22,
+      "peak": 0.398,
+      "loop": false,
+      "sha256": "1c59f73c2a59ffb519ddd838e805f1cdc3f5586cb17f0f0c5b05e9662ee6f64a"
+    },
+    "weapon_swap": {
+      "file": "weapon_swap.wav",
+      "frames": 11025,
+      "seconds": 0.5,
+      "peak": 0.3980000000000001,
+      "loop": false,
+      "sha256": "a786e27dfa37a7eb12613bd899e4d9ea1ab23badef8d2cfc3df5fe8d73a0c634"
+    },
+    "oath": {
+      "file": "oath.wav",
+      "frames": 15435,
+      "seconds": 0.7,
+      "peak": 0.3980000000000001,
+      "loop": false,
+      "sha256": "c1d1560dd56045371399c28a3d7e89bc19be2e511cdc26bd065b2af565ff2993"
+    }
+  }
+}

@@ -1,0 +1,725 @@
+{
+	"interpretation": "Non-reactive policies must fail; this does not measure human learning or fun.",
+	"rows": [
+		{
+			"damage": 0.0,
+			"hits": [
+				{
+					"cause": "재의 발톱",
+					"damage": 28.0,
+					"pattern": "claw",
+					"tick": 123
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 322
+				},
+				{
+					"cause": "첫 균열",
+					"damage": 40.0,
+					"pattern": "rupture",
+					"tick": 511
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 728
+				}
+			],
+			"hp": 0.0,
+			"phase": 1,
+			"policy": "idle",
+			"result": "dead",
+			"seed": 1,
+			"ticks": 728,
+			"weapon": "W01"
+		},
+		{
+			"damage": 237.6,
+			"hits": [
+				{
+					"cause": "재의 발톱",
+					"damage": 28.0,
+					"pattern": "claw",
+					"tick": 82
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 275
+				},
+				{
+					"cause": "첫 균열",
+					"damage": 40.0,
+					"pattern": "rupture",
+					"tick": 467
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 679
+				}
+			],
+			"hp": 0.0,
+			"phase": 1,
+			"policy": "greedy_early_dodge",
+			"result": "dead",
+			"seed": 1,
+			"ticks": 679,
+			"weapon": "W01"
+		},
+		{
+			"damage": 0.0,
+			"hits": [
+				{
+					"cause": "재의 발톱",
+					"damage": 28.0,
+					"pattern": "claw",
+					"tick": 123
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 322
+				},
+				{
+					"cause": "첫 균열",
+					"damage": 40.0,
+					"pattern": "rupture",
+					"tick": 511
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 728
+				}
+			],
+			"hp": 0.0,
+			"phase": 1,
+			"policy": "idle",
+			"result": "dead",
+			"seed": 7,
+			"ticks": 728,
+			"weapon": "W01"
+		},
+		{
+			"damage": 237.6,
+			"hits": [
+				{
+					"cause": "재의 발톱",
+					"damage": 28.0,
+					"pattern": "claw",
+					"tick": 82
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 275
+				},
+				{
+					"cause": "첫 균열",
+					"damage": 40.0,
+					"pattern": "rupture",
+					"tick": 467
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 679
+				}
+			],
+			"hp": 0.0,
+			"phase": 1,
+			"policy": "greedy_early_dodge",
+			"result": "dead",
+			"seed": 7,
+			"ticks": 679,
+			"weapon": "W01"
+		},
+		{
+			"damage": 0.0,
+			"hits": [
+				{
+					"cause": "재의 발톱",
+					"damage": 28.0,
+					"pattern": "claw",
+					"tick": 123
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 322
+				},
+				{
+					"cause": "첫 균열",
+					"damage": 40.0,
+					"pattern": "rupture",
+					"tick": 511
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 728
+				}
+			],
+			"hp": 0.0,
+			"phase": 1,
+			"policy": "idle",
+			"result": "dead",
+			"seed": 1,
+			"ticks": 728,
+			"weapon": "W02"
+		},
+		{
+			"damage": 388.8,
+			"hits": [
+				{
+					"cause": "재의 발톱",
+					"damage": 28.0,
+					"pattern": "claw",
+					"tick": 86
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 280
+				},
+				{
+					"cause": "첫 균열",
+					"damage": 40.0,
+					"pattern": "rupture",
+					"tick": 471
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 682
+				}
+			],
+			"hp": 0.0,
+			"phase": 1,
+			"policy": "greedy_early_dodge",
+			"result": "dead",
+			"seed": 1,
+			"ticks": 682,
+			"weapon": "W02"
+		},
+		{
+			"damage": 0.0,
+			"hits": [
+				{
+					"cause": "재의 발톱",
+					"damage": 28.0,
+					"pattern": "claw",
+					"tick": 123
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 322
+				},
+				{
+					"cause": "첫 균열",
+					"damage": 40.0,
+					"pattern": "rupture",
+					"tick": 511
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 728
+				}
+			],
+			"hp": 0.0,
+			"phase": 1,
+			"policy": "idle",
+			"result": "dead",
+			"seed": 7,
+			"ticks": 728,
+			"weapon": "W02"
+		},
+		{
+			"damage": 388.8,
+			"hits": [
+				{
+					"cause": "재의 발톱",
+					"damage": 28.0,
+					"pattern": "claw",
+					"tick": 86
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 280
+				},
+				{
+					"cause": "첫 균열",
+					"damage": 40.0,
+					"pattern": "rupture",
+					"tick": 471
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 682
+				}
+			],
+			"hp": 0.0,
+			"phase": 1,
+			"policy": "greedy_early_dodge",
+			"result": "dead",
+			"seed": 7,
+			"ticks": 682,
+			"weapon": "W02"
+		},
+		{
+			"damage": 0.0,
+			"hits": [
+				{
+					"cause": "재의 발톱",
+					"damage": 28.0,
+					"pattern": "claw",
+					"tick": 123
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 322
+				},
+				{
+					"cause": "첫 균열",
+					"damage": 40.0,
+					"pattern": "rupture",
+					"tick": 511
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 728
+				}
+			],
+			"hp": 0.0,
+			"phase": 1,
+			"policy": "idle",
+			"result": "dead",
+			"seed": 1,
+			"ticks": 728,
+			"weapon": "W03"
+		},
+		{
+			"damage": 82.5,
+			"hits": [
+				{
+					"cause": "재의 발톱",
+					"damage": 28.0,
+					"pattern": "claw",
+					"tick": 82
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 276
+				},
+				{
+					"cause": "첫 균열",
+					"damage": 40.0,
+					"pattern": "rupture",
+					"tick": 467
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 678
+				}
+			],
+			"hp": 0.0,
+			"phase": 1,
+			"policy": "greedy_early_dodge",
+			"result": "dead",
+			"seed": 1,
+			"ticks": 678,
+			"weapon": "W03"
+		},
+		{
+			"damage": 0.0,
+			"hits": [
+				{
+					"cause": "재의 발톱",
+					"damage": 28.0,
+					"pattern": "claw",
+					"tick": 123
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 322
+				},
+				{
+					"cause": "첫 균열",
+					"damage": 40.0,
+					"pattern": "rupture",
+					"tick": 511
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 728
+				}
+			],
+			"hp": 0.0,
+			"phase": 1,
+			"policy": "idle",
+			"result": "dead",
+			"seed": 7,
+			"ticks": 728,
+			"weapon": "W03"
+		},
+		{
+			"damage": 82.5,
+			"hits": [
+				{
+					"cause": "재의 발톱",
+					"damage": 28.0,
+					"pattern": "claw",
+					"tick": 82
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 276
+				},
+				{
+					"cause": "첫 균열",
+					"damage": 40.0,
+					"pattern": "rupture",
+					"tick": 467
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 678
+				}
+			],
+			"hp": 0.0,
+			"phase": 1,
+			"policy": "greedy_early_dodge",
+			"result": "dead",
+			"seed": 7,
+			"ticks": 678,
+			"weapon": "W03"
+		},
+		{
+			"damage": 0.0,
+			"hits": [
+				{
+					"cause": "재의 발톱",
+					"damage": 28.0,
+					"pattern": "claw",
+					"tick": 123
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 322
+				},
+				{
+					"cause": "첫 균열",
+					"damage": 40.0,
+					"pattern": "rupture",
+					"tick": 511
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 728
+				}
+			],
+			"hp": 0.0,
+			"phase": 1,
+			"policy": "idle",
+			"result": "dead",
+			"seed": 1,
+			"ticks": 728,
+			"weapon": "W04"
+		},
+		{
+			"damage": 0.0,
+			"hits": [
+				{
+					"cause": "재의 발톱",
+					"damage": 28.0,
+					"pattern": "claw",
+					"tick": 82
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 275
+				},
+				{
+					"cause": "첫 균열",
+					"damage": 40.0,
+					"pattern": "rupture",
+					"tick": 467
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 678
+				}
+			],
+			"hp": 0.0,
+			"phase": 1,
+			"policy": "greedy_early_dodge",
+			"result": "dead",
+			"seed": 1,
+			"ticks": 678,
+			"weapon": "W04"
+		},
+		{
+			"damage": 0.0,
+			"hits": [
+				{
+					"cause": "재의 발톱",
+					"damage": 28.0,
+					"pattern": "claw",
+					"tick": 123
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 322
+				},
+				{
+					"cause": "첫 균열",
+					"damage": 40.0,
+					"pattern": "rupture",
+					"tick": 511
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 728
+				}
+			],
+			"hp": 0.0,
+			"phase": 1,
+			"policy": "idle",
+			"result": "dead",
+			"seed": 7,
+			"ticks": 728,
+			"weapon": "W04"
+		},
+		{
+			"damage": 0.0,
+			"hits": [
+				{
+					"cause": "재의 발톱",
+					"damage": 28.0,
+					"pattern": "claw",
+					"tick": 82
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 275
+				},
+				{
+					"cause": "첫 균열",
+					"damage": 40.0,
+					"pattern": "rupture",
+					"tick": 467
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 678
+				}
+			],
+			"hp": 0.0,
+			"phase": 1,
+			"policy": "greedy_early_dodge",
+			"result": "dead",
+			"seed": 7,
+			"ticks": 678,
+			"weapon": "W04"
+		},
+		{
+			"damage": 0.0,
+			"hits": [
+				{
+					"cause": "재의 발톱",
+					"damage": 28.0,
+					"pattern": "claw",
+					"tick": 123
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 322
+				},
+				{
+					"cause": "첫 균열",
+					"damage": 40.0,
+					"pattern": "rupture",
+					"tick": 511
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 728
+				}
+			],
+			"hp": 0.0,
+			"phase": 1,
+			"policy": "idle",
+			"result": "dead",
+			"seed": 1,
+			"ticks": 728,
+			"weapon": "W05"
+		},
+		{
+			"damage": 329.4,
+			"hits": [
+				{
+					"cause": "재의 발톱",
+					"damage": 28.0,
+					"pattern": "claw",
+					"tick": 90
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 283
+				},
+				{
+					"cause": "첫 균열",
+					"damage": 40.0,
+					"pattern": "rupture",
+					"tick": 474
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 692
+				}
+			],
+			"hp": 0.0,
+			"phase": 1,
+			"policy": "greedy_early_dodge",
+			"result": "dead",
+			"seed": 1,
+			"ticks": 692,
+			"weapon": "W05"
+		},
+		{
+			"damage": 0.0,
+			"hits": [
+				{
+					"cause": "재의 발톱",
+					"damage": 28.0,
+					"pattern": "claw",
+					"tick": 123
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 322
+				},
+				{
+					"cause": "첫 균열",
+					"damage": 40.0,
+					"pattern": "rupture",
+					"tick": 511
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 728
+				}
+			],
+			"hp": 0.0,
+			"phase": 1,
+			"policy": "idle",
+			"result": "dead",
+			"seed": 7,
+			"ticks": 728,
+			"weapon": "W05"
+		},
+		{
+			"damage": 329.4,
+			"hits": [
+				{
+					"cause": "재의 발톱",
+					"damage": 28.0,
+					"pattern": "claw",
+					"tick": 90
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 283
+				},
+				{
+					"cause": "첫 균열",
+					"damage": 40.0,
+					"pattern": "rupture",
+					"tick": 474
+				},
+				{
+					"cause": "최초의 맥동",
+					"damage": 30.0,
+					"pattern": "pulse",
+					"tick": 692
+				}
+			],
+			"hp": 0.0,
+			"phase": 1,
+			"policy": "greedy_early_dodge",
+			"result": "dead",
+			"seed": 7,
+			"ticks": 692,
+			"weapon": "W05"
+		}
+	]
+}

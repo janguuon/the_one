@@ -1,0 +1,14 @@
+{
+  "O01":{"id":"O01","name":"마른 장작","benefit":"기본 직접 피해 +15%","burden":"비기·공명 직접 피해 -15%","basic_multiplier":1.15,"signature_multiplier":0.85,"excludes":["O02"]},
+  "O02":{"id":"O02","name":"긴 맹세","benefit":"비기·공명 직접 피해 +25%","burden":"비기 필요 스택 +2","signature_multiplier":1.25,"stack_delta":2,"excludes":["O01","O10"]},
+  "O03":{"id":"O03","name":"가까운 불","benefit":"거리 40px 이하 직접 피해 +15%","burden":"40px 초과 직접 피해 -10%","near_multiplier":1.15,"far_multiplier":0.9,"excludes":["O04"]},
+  "O04":{"id":"O04","name":"먼 기억","benefit":"거리 40px 초과 직접 피해 +15%","burden":"40px 이하 직접 피해 -10%","near_multiplier":0.9,"far_multiplier":1.15,"excludes":["O03"]},
+  "O05":{"id":"O05","name":"가벼운 뼈","benefit":"회피 거리 +15%","burden":"모든 직접 피해 -8%","dodge_multiplier":1.15,"direct_multiplier":0.92,"excludes":[]},
+  "O06":{"id":"O06","name":"맨발의 순례","benefit":"이동 속도 +12%","burden":"최대 체력 -15","speed_multiplier":1.12,"hp_delta":-15,"excludes":[]},
+  "O07":{"id":"O07","name":"긴 숨","benefit":"최대 체력 +20, 현재 체력 +20","burden":"모든 직접 피해 -8%","hp_delta":20,"heal_on_select":20,"direct_multiplier":0.92,"excludes":[]},
+  "O08":{"id":"O08","name":"잔불 주머니","benefit":"기운 획득·보충 최대 횟수 +1","burden":"속성·공명 직접 피해 -15%","charge_delta":1,"element_multiplier":0.85,"excludes":[]},
+  "O09":{"id":"O09","name":"남은 온기","benefit":"바닥 기운 유지 시간 +6초","burden":"이동 속도 -6%","ground_delta":360,"speed_multiplier":0.94,"excludes":[]},
+  "O10":{"id":"O10","name":"성급한 계시","benefit":"비기 필요 스택 -1, 최저 3","burden":"기본 직접 피해 -10%","stack_delta":-1,"basic_multiplier":0.9,"excludes":["O02"]},
+  "O11":{"id":"O11","name":"불완전한 성역","benefit":"이후 페이즈 회복 25","burden":"최대 체력 -10","hp_delta":-10,"phase_heal":25,"excludes":[]},
+  "O12":{"id":"O12","name":"굳은 결의","benefit":"받는 피해 -10%","burden":"회피 거리 -10%","incoming_multiplier":0.9,"dodge_multiplier":0.9,"excludes":[]}
+}

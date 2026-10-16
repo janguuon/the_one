@@ -19,6 +19,11 @@ func _run() -> void:
 	_test_natural_death_and_retry()
 	_test_completion_and_retry_menu()
 	_test_gamepad_event_mapping()
+	_test_invalid_placement_result()
+	_test_practice_menu_and_retry()
+	_test_practice_result_records_are_separate()
+	_test_official_final_record_once()
+	_test_transition_release_and_unlock()
 	print("SCENE INTEGRATION: %d checks, %d failures" % [checks, failures.size()])
 	for message in failures:
 		push_error(message)
@@ -27,6 +32,7 @@ func _run() -> void:
 
 func _scene():
 	var main = MainScene.instantiate()
+	main.profile_enabled = false
 	root.add_child(main)
 	main.set_physics_process(false)
 	main.set_process(false)
@@ -36,6 +42,7 @@ func _scene():
 func _playing_scene():
 	var main = _scene()
 	_key(main, KEY_ENTER)
+	_key(main, KEY_ENTER, false)
 	main.model.boss_enabled = false
 	main.model.player_pos = Vector2(280, 184)
 	main.model.boss_pos = Vector2(400, 184)
@@ -77,7 +84,8 @@ func _test_title_and_fresh_press() -> void:
 	_ticks(main, 30)
 	_check(main.model.tick == 0, "Title screen never advances combat")
 	_key(main, KEY_ENTER)
-	_check(main.screen == "playing" and main.model.mode == "prototype", "Enter starts prototype mode")
+	_check(main.screen == "playing" and main.model.mode == "official", "Enter starts the five-phase official mode")
+	_key(main, KEY_ENTER, false)
 	_ticks(main, 1)
 	_check(main.model.total_attacks == 0, "Title confirmation does not become a combat attack")
 	main.model.boss_enabled = false
@@ -118,11 +126,13 @@ func _test_pause_freezes_combat_and_pickups() -> void:
 	_key(main, KEY_J)
 	_key(main, KEY_ESCAPE)
 	_check(main.screen == "paused", "Escape opens pause from combat")
+	_key(main, KEY_ESCAPE, false)
 	_ticks(main, 120)
 	_check(main.model.tick == tick_before and main.model.pickups[0].ttl == ttl_before,
 		"T20 pause freezes combat ticks and grounded pickup lifetime")
 	_check(is_equal_approx(main.wall_seconds, wall_before), "Pause time is excluded from active wall time")
 	_key(main, KEY_ESCAPE)
+	_key(main, KEY_ESCAPE, false)
 	_ticks(main, 1)
 	_check(main.screen == "playing" and main.model.total_attacks == 0,
 		"Resume clears an attack press pending before pause")
@@ -130,6 +140,8 @@ func _test_pause_freezes_combat_and_pickups() -> void:
 	_ticks(main, 1)
 	_check(main.model.total_attacks == 0, "Held J repeat after resume cannot start an attack")
 	_key(main, KEY_ESCAPE)
+	_key(main, KEY_ESCAPE, false)
+	_key(main, KEY_J, false)
 	_key(main, KEY_J)
 	_ticks(main, 1)
 	_check(main.screen == "playing" and main.model.total_attacks == 0,
@@ -154,10 +166,12 @@ func _test_hitstop_freezes_every_combat_timer() -> void:
 		"T20 hitstop freezes attack age and pickup lifetime with the combat clock")
 	var remaining_before_pause: float = main.hitstop_remaining
 	_key(main, KEY_ESCAPE)
+	_key(main, KEY_ESCAPE, false)
 	_ticks(main, 60)
 	_check(is_equal_approx(main.hitstop_remaining, remaining_before_pause) and main.model.tick == tick_before,
 		"Pausing during hitstop also freezes its remaining real-time interval")
 	_key(main, KEY_ESCAPE)
+	_key(main, KEY_ESCAPE, false)
 	while main.hitstop_remaining > 0.0005:
 		_ticks(main, 1, 1.0 / 120.0)
 	_check(main.model.tick == tick_before, "Consuming the hitstop interval never advances a partial combat tick")
@@ -191,6 +205,10 @@ func _test_natural_death_and_retry() -> void:
 
 func _test_completion_and_retry_menu() -> void:
 	var main = _playing_scene()
+	main._start_run("prototype", 1)
+	main.model.boss_enabled = false
+	main.model.player_pos = Vector2(280, 184)
+	main.model.player_facing = Vector2.RIGHT
 	main.model.boss_pos = Vector2(320, 184)
 	main.model.boss_hp = 18.0
 	_key(main, KEY_J)
@@ -203,6 +221,130 @@ func _test_completion_and_retry_menu() -> void:
 		"Completion retry menu starts a fresh P1 run")
 	_ticks(main, 1)
 	_check(main.model.total_attacks == 0, "Result confirmation never leaks an attack into the new run")
+	main.free()
+
+
+func _test_practice_menu_and_retry() -> void:
+	var main = _scene()
+	main._open_practice()
+	_check(main.screen == "practice" and main.unlocked_practice == 1,
+		"A fresh profile opens practice with only P1 available")
+	main.menu_index = 4
+	_key(main, KEY_ENTER)
+	_key(main, KEY_ENTER, false)
+	_check(main.screen == "practice", "Selecting locked P5 cannot start an unreached practice phase")
+	main.menu_index = 0
+	_key(main, KEY_ENTER)
+	_key(main, KEY_ENTER, false)
+	_check(main.screen == "playing" and main.model.mode == "practice" and main.model.phase_id == 1,
+		"Selecting unlocked P1 starts an isolated practice run")
+	_check(main.model.total_attacks == 0, "Practice confirmation cannot leak into a combat attack")
+	main._start_run("practice", 4)
+	main.model.boss_enabled = false
+	main.model.debug_damage_player(100.0, "practice_death")
+	_ticks(main, 1)
+	_check(main.screen == "result" and main.model.result == "dead", "Practice death reaches its result screen")
+	_key(main, KEY_R)
+	_check(main.screen == "playing" and main.model.mode == "practice" and main.model.phase_id == 4
+		and main.model.boss_hp == 1300.0 and main.model.player_hp == 100.0,
+		"Practice retry preserves its selected phase and resets combat resources")
+	main.free()
+
+
+func _test_practice_result_records_are_separate() -> void:
+	var main = _scene()
+	main._start_run("practice", 5)
+	main.model.boss_enabled = false
+	main.model.player_pos = Vector2(280, 184)
+	main.model.boss_pos = Vector2(320, 184)
+	main.model.player_facing = Vector2.RIGHT
+	main.model.boss_hp = 18.0
+	_key(main, KEY_J)
+	_ticks(main, 15)
+	_check(main.screen == "result" and main.model.result == "practice_complete",
+		"Selected P5 practice victory opens a practice completion result")
+	_check(main.official_records.is_empty() and main.unlocked_practice == 1,
+		"T18 practice completion never updates official records or phase unlocks")
+	_key(main, KEY_J, false)
+	main.menu_index = 1
+	_key(main, KEY_ENTER)
+	_check(main.screen == "practice", "Practice result can return to the practice selection menu")
+	main.free()
+
+
+func _test_official_final_record_once() -> void:
+	var main = _scene()
+	main._start_run("official", 1)
+	main.model.phase_id = 5
+	main.model.phase_hp_max = 1400.0
+	main.model.boss_enabled = false
+	main.model.player_pos = Vector2(280, 184)
+	main.model.boss_pos = Vector2(320, 184)
+	main.model.player_facing = Vector2.RIGHT
+	main.model.boss_hp = 18.0
+	_key(main, KEY_J)
+	_ticks(main, 15)
+	_check(main.screen == "result" and main.model.result == "victory", "Official P5 finishing hit opens final victory")
+	_check(main.official_records.size() == 1, "An official victory creates one official run record")
+	_ticks(main, 100)
+	_check(main.official_records.size() == 1, "Waiting on the final result cannot duplicate the official record")
+	_key(main, KEY_J, false)
+	_key(main, KEY_R)
+	_check(main.model.mode == "official" and main.model.phase_id == 1,
+		"Official retry always restarts at P1 without a checkpoint")
+	main.free()
+
+
+func _test_transition_release_and_unlock() -> void:
+	var main = _playing_scene()
+	main.model.boss_pos = Vector2(320, 184)
+	main.model.boss_hp = 18.0
+	_key(main, KEY_J)
+	_ticks(main, 10)
+	_check(main.model.transition_ticks_remaining == 150 and main.screen == "playing",
+		"A real finishing sword hit enters the phase transition inside the playable scene")
+	_key(main, KEY_SPACE)
+	_ticks(main, 90)
+	_check(main.model.phase_id == 2 and main.unlocked_practice == 2,
+		"Official P2 reach unlocks its practice while the restart warning is still active")
+	_check(main.screen == "oaths" and main.model.selection_pending,
+		"M4 first phase reward opens the oath menu after relocation")
+	var selection_tick: int = main.model.tick
+	var selection_wall: float = main.wall_seconds
+	_ticks(main, 120)
+	_check(main.model.tick == selection_tick and main.wall_seconds == selection_wall,
+		"M4 unlimited oath selection freezes combat and active wall time")
+	main.menu_index = 3
+	_key(main, KEY_ENTER)
+	_key(main, KEY_ENTER, false)
+	_check(main.screen == "playing" and not main.model.selection_pending,
+		"M4 explicit skip resumes the full restart warning")
+	_ticks(main, 60)
+	_check(main.model.player_state == "idle" and main.model.total_attacks == 1,
+		"Transition restart does not execute attack or dodge held during relocation")
+	_key(main, KEY_J)
+	_key(main, KEY_SPACE)
+	_ticks(main, 1)
+	_check(main.model.total_attacks == 1 and main.model.player_state == "idle",
+		"Repeated held device events cannot start an action after transition")
+	_key(main, KEY_J, false)
+	_key(main, KEY_SPACE, false)
+	_key(main, KEY_J)
+	_ticks(main, 1)
+	_check(main.model.total_attacks == 2, "Releasing and pressing after transition enables one fresh attack")
+	_key(main, KEY_J, false)
+	_key(main, KEY_ESCAPE)
+	main.menu_index = 2
+	_key(main, KEY_ENTER)
+	_check(main.screen == "title" and main.official_records.size() == 1
+		and main.official_records[0].result == "abandoned" and main.unlocked_practice == 2,
+		"Abandoning a reached phase records abandonment while preserving its practice unlock")
+	main._open_practice()
+	main.menu_index = 1
+	_key(main, KEY_ENTER, false)
+	_key(main, KEY_ENTER)
+	_check(main.screen == "playing" and main.model.mode == "practice" and main.model.phase_id == 2,
+		"Newly unlocked P2 can be selected from the practice menu")
 	main.free()
 
 
@@ -221,4 +363,17 @@ func _test_gamepad_event_mapping() -> void:
 	_check(main.model.total_attacks == 1, "Mapped gamepad X press starts one attack")
 	_joy(main, JOY_BUTTON_START)
 	_check(main.screen == "paused", "Mapped gamepad Start pauses combat")
+	main.free()
+
+
+func _test_invalid_placement_result() -> void:
+	var main = _playing_scene()
+	main.model.result = "safety_error"
+	main.model.cause = "No legal placement"
+	_ticks(main, 1)
+	_check(main.screen == "result" and main.official_records.is_empty(),
+		"An invalid placement opens a retry result without an official defeat record")
+	_key(main, KEY_R)
+	_check(main.screen == "playing" and main.model.result.is_empty() and main.model.phase_id == 1,
+		"A failed placement can restart a normal official run")
 	main.free()

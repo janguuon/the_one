@@ -1,0 +1,259 @@
+{
+  "cpu": "Intel Core Ultra 5 125H",
+  "os": "Microsoft Windows 10.0.26300",
+  "driver": "32.0.101.9150",
+  "warmup_seconds": 2,
+  "samples": [
+    {
+      "combat_ticks": 298,
+      "display": "Windows",
+      "driver": "Intel(R) Arc(TM) Graphics",
+      "engine": "4.5.2-stable (official)",
+      "fps_cap": 30,
+      "frame": {
+        "max_ms": 36.731,
+        "mean_ms": 33.331,
+        "p95_ms": 34.237,
+        "p99_ms": 35.314
+      },
+      "frames": 150,
+      "hitstop": 0.0,
+      "logical_viewport": "(640.0, 360.0)",
+      "max_hazards": 2,
+      "physics": {
+        "max_ms": 1.848,
+        "mean_ms": 1.575,
+        "p95_ms": 1.848,
+        "p99_ms": 1.848
+      },
+      "process": {
+        "max_ms": 16.269,
+        "mean_ms": 12.905,
+        "p95_ms": 16.269,
+        "p99_ms": 16.269
+      },
+      "renderer": "gl_compatibility",
+      "requested_pattern": "",
+      "sample_seconds": 5.0,
+      "wall_seconds": 7.26666666666665,
+      "window": "(1280, 720)"
+    },
+    {
+      "combat_ticks": 297,
+      "display": "Windows",
+      "driver": "Intel(R) Arc(TM) Graphics",
+      "engine": "4.5.2-stable (official)",
+      "fps_cap": 60,
+      "frame": {
+        "max_ms": 18.132,
+        "mean_ms": 16.664,
+        "p95_ms": 17.002,
+        "p99_ms": 17.327
+      },
+      "frames": 300,
+      "hitstop": 0.0,
+      "logical_viewport": "(640.0, 360.0)",
+      "max_hazards": 2,
+      "physics": {
+        "max_ms": 1.353,
+        "mean_ms": 1.216,
+        "p95_ms": 1.353,
+        "p99_ms": 1.353
+      },
+      "process": {
+        "max_ms": 11.527,
+        "mean_ms": 9.321,
+        "p95_ms": 11.527,
+        "p99_ms": 11.527
+      },
+      "renderer": "gl_compatibility",
+      "requested_pattern": "",
+      "sample_seconds": 5.0,
+      "wall_seconds": 7.23333333333331,
+      "window": "(1280, 720)"
+    },
+    {
+      "combat_ticks": 296,
+      "display": "Windows",
+      "driver": "Intel(R) Arc(TM) Graphics",
+      "engine": "4.5.2-stable (official)",
+      "fps_cap": 120,
+      "frame": {
+        "max_ms": 11.576,
+        "mean_ms": 8.333,
+        "p95_ms": 9.058,
+        "p99_ms": 9.168
+      },
+      "frames": 600,
+      "hitstop": 0.0,
+      "logical_viewport": "(640.0, 360.0)",
+      "max_hazards": 2,
+      "physics": {
+        "max_ms": 1.087,
+        "mean_ms": 0.845,
+        "p95_ms": 1.087,
+        "p99_ms": 1.087
+      },
+      "process": {
+        "max_ms": 7.539,
+        "mean_ms": 6.72,
+        "p95_ms": 7.539,
+        "p99_ms": 7.539
+      },
+      "renderer": "gl_compatibility",
+      "requested_pattern": "",
+      "sample_seconds": 5.0,
+      "wall_seconds": 7.23333333333331,
+      "window": "(1280, 720)"
+    },
+    {
+      "combat_ticks": 297,
+      "display": "Windows",
+      "driver": "Intel(R) Arc(TM) Graphics",
+      "engine": "4.5.2-stable (official)",
+      "fps_cap": 60,
+      "frame": {
+        "max_ms": 17.253,
+        "mean_ms": 16.666,
+        "p95_ms": 16.854,
+        "p99_ms": 17.033
+      },
+      "frames": 300,
+      "hitstop": 0.0,
+      "logical_viewport": "(640.0, 360.0)",
+      "max_hazards": 2,
+      "physics": {
+        "max_ms": 0.982,
+        "mean_ms": 0.821,
+        "p95_ms": 0.982,
+        "p99_ms": 0.982
+      },
+      "process": {
+        "max_ms": 7.45,
+        "mean_ms": 5.604,
+        "p95_ms": 7.146,
+        "p99_ms": 7.45
+      },
+      "renderer": "gl_compatibility",
+      "requested_pattern": "",
+      "sample_seconds": 5.0,
+      "wall_seconds": 7.26666666666665,
+      "window": "(1024, 768)"
+    },
+    {
+      "combat_ticks": 297,
+      "display": "Windows",
+      "driver": "Intel(R) Arc(TM) Graphics",
+      "engine": "4.5.2-stable (official)",
+      "fps_cap": 60,
+      "frame": {
+        "max_ms": 17.413,
+        "mean_ms": 16.666,
+        "p95_ms": 16.95,
+        "p99_ms": 17.299
+      },
+      "frames": 300,
+      "hitstop": 0.0,
+      "logical_viewport": "(640.0, 360.0)",
+      "max_hazards": 2,
+      "physics": {
+        "max_ms": 1.29,
+        "mean_ms": 1.008,
+        "p95_ms": 1.29,
+        "p99_ms": 1.29
+      },
+      "process": {
+        "max_ms": 9.45,
+        "mean_ms": 6.185,
+        "p95_ms": 9.45,
+        "p99_ms": 9.45
+      },
+      "renderer": "gl_compatibility",
+      "requested_pattern": "",
+      "sample_seconds": 5.0,
+      "wall_seconds": 7.26666666666665,
+      "window": "(1920, 720)"
+    },
+    {
+      "combat_ticks": 477,
+      "display": "Windows",
+      "driver": "Intel(R) Arc(TM) Graphics",
+      "engine": "4.5.2-stable (official)",
+      "fps_cap": 60,
+      "frame": {
+        "max_ms": 22.313,
+        "mean_ms": 16.665,
+        "p95_ms": 17.049,
+        "p99_ms": 18.741
+      },
+      "frames": 480,
+      "hitstop": 0.0,
+      "logical_viewport": "(640.0, 360.0)",
+      "max_hazards": 4,
+      "physics": {
+        "max_ms": 2.013,
+        "mean_ms": 1.403,
+        "p95_ms": 2.013,
+        "p99_ms": 2.013
+      },
+      "process": {
+        "max_ms": 21.552,
+        "mean_ms": 14.656,
+        "p95_ms": 21.552,
+        "p99_ms": 21.552
+      },
+      "renderer": "gl_compatibility",
+      "requested_pattern": "last_horizon",
+      "sample_seconds": 8.0,
+      "wall_seconds": 10.2666666666668,
+      "window": "(1280, 720)"
+    }
+  ],
+  "geometry_cpu_same_process": {
+    "cached_ms": 106.554,
+    "calls": 10500,
+    "identical_counts": true,
+    "pieces": 112500,
+    "speedup": 14.3484242731385,
+    "uncached_ms": 1528.882
+  },
+  "before_cache_stress_sample": {
+    "combat_ticks": 478,
+    "display": "Windows",
+    "driver": "Intel(R) Arc(TM) Graphics",
+    "engine": "4.5.2-stable (official)",
+    "fps_cap": 60,
+    "frame": {
+      "max_ms": 56.605,
+      "mean_ms": 17.618,
+      "p95_ms": 25.334,
+      "p99_ms": 34.26
+    },
+    "frames": 454,
+    "hitstop": 0.0,
+    "logical_viewport": "(640.0, 360.0)",
+    "max_hazards": 4,
+    "physics": {
+      "max_ms": 2.691,
+      "mean_ms": 1.839,
+      "p95_ms": 2.691,
+      "p99_ms": 2.691
+    },
+    "process": {
+      "max_ms": 53.173,
+      "mean_ms": 25.692,
+      "p95_ms": 53.173,
+      "p99_ms": 53.173
+    },
+    "renderer": "gl_compatibility",
+    "requested_pattern": "last_horizon",
+    "sample_seconds": 8.0,
+    "wall_seconds": 10.2500000000001,
+    "window": "(1280, 720)"
+  },
+  "notes": [
+    "Frame data are short native samples on one Windows device.",
+    "The matched geometry CPU speedup is not a claim about total game FPS.",
+    "The old and new native samples have uncontrolled background load variation."
+  ]
+}

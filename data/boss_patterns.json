@@ -1,0 +1,17 @@
+{
+  "claw": {"name":"재의 발톱","phase":1,"shape":"sector","telegraph_ticks":51,"lock_tick":30,"active_ticks":6,"recover_start":57,"recover_ticks":66,"radius":56,"arc_degrees":140,"damage":28},
+  "rupture": {"name":"첫 균열","phase":1,"shape":"line","telegraph_ticks":120,"lock_tick":60,"active_ticks":6,"recover_start":126,"recover_ticks":84,"length":196,"width":24,"damage":40},
+  "pulse": {"name":"최초의 맥동","phase":1,"shape":"ring","telegraph_ticks":120,"lock_tick":0,"recover_ticks":66,"radius":28,"width":8,"speed":240,"damage":30},
+  "territory": {"name":"서리의 영토","phase":2,"shape":"disk","telegraph_ticks":120,"active_ticks":144,"recover_start":264,"recover_ticks":60,"radius":22,"damage":18,"circle_count":3},
+  "rings": {"name":"맞물리는 고리","phase":2,"shape":"disk","telegraph_ticks":120,"active_ticks":6,"recover_start":183,"recover_ticks":84,"radius":64,"damage":28,"strike_ticks":[120,177]},
+  "horizon": {"name":"얼어붙는 지평","phase":2,"shape":"corridor","telegraph_ticks":132,"active_ticks":12,"recover_start":144,"recover_ticks":78,"width":60,"damage":36},
+  "heartbeat": {"name":"세 번째 심장","phase":3,"shape":"sector","telegraph_ticks":48,"lock_tick":27,"active_ticks":6,"recover_start":147,"recover_ticks":90,"radius":56,"arc_degrees":140,"strike_ticks":[48,81,141],"strike_damage":[22,22,36],"last_preview":87,"last_lock":120,"damage":22},
+  "dash": {"name":"번개의 궤적","phase":3,"shape":"capsule","telegraph_ticks":120,"active_ticks":18,"recover_start":252,"recover_ticks":90,"width":28,"max_length":144,"speed":480,"strike_ticks":[120,177,234],"damage":26},
+  "thrust": {"name":"멎은 심장","phase":3,"shape":"line","telegraph_ticks":96,"lock_tick":75,"active_ticks":6,"recover_start":102,"recover_ticks":108,"length":160,"width":24,"damage":45},
+  "echo": {"name":"남은 칼날","phase":4,"shape":"sector","telegraph_ticks":51,"lock_tick":30,"active_ticks":6,"recover_start":117,"recover_ticks":84,"radius":56,"arc_degrees":140,"strike_ticks":[51,111],"strike_damage":[28,24],"damage":28},
+  "footprints": {"name":"지워지지 않는 발자국","phase":4,"shape":"disk","telegraph_ticks":120,"active_ticks":6,"recover_start":174,"recover_ticks":84,"radius":22,"damage":26,"record_ticks":[0,24,48],"strike_ticks":[120,144,168]},
+  "fractures": {"name":"갈라진 순간","phase":4,"shape":"disk","telegraph_ticks":120,"active_ticks":6,"recover_start":297,"recover_ticks":108,"radius":64,"damage":24,"strike_ticks":[120,177,234,291]},
+  "execution": {"name":"최초의 처형","phase":5,"shape":"sector","telegraph_ticks":48,"lock_tick":27,"active_ticks":6,"recover_start":273,"recover_ticks":90,"radius":56,"arc_degrees":140,"strike_ticks":[48,81,141,267],"strike_damage":[22,22,36,40],"last_preview":87,"last_lock":120,"line_preview":147,"line_lock":207,"line_length":196,"width":24,"damage":22},
+  "last_horizon": {"name":"마지막 지평","phase":5,"shape":"disk","telegraph_ticks":120,"active_ticks":192,"recover_ticks":108,"radius":22,"damage":18,"circle_count":3,"wave_preview":120,"wave_start":240,"wave_radius":28,"wave_width":8,"wave_speed":240,"wave_damage":30},
+  "nameless_end": {"name":"이름 없는 끝","phase":5,"shape":"sector","telegraph_ticks":51,"lock_tick":30,"active_ticks":6,"recover_start":219,"recover_ticks":120,"radius":56,"arc_degrees":140,"strike_ticks":[51,111,213],"strike_damage":[28,24,45],"line_preview":117,"line_lock":192,"line_length":160,"width":24,"damage":28}
+}

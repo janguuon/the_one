@@ -1,0 +1,220 @@
+{
+	"clock": "60 FPS modeled wall time including hitstop; menu time excluded",
+	"rows": [
+		{
+			"attacks": 286,
+			"collected": {
+				"fire": 1,
+				"frost": 2,
+				"lightning": 1,
+				"void": 1
+			},
+			"damage": 6000.0,
+			"damage_by_pattern": {
+				"claw": 237.6,
+				"dash": 354.6,
+				"echo": 520.2,
+				"execution": 424.8,
+				"footprints": 90.0,
+				"fractures": 698.4,
+				"heartbeat": 398.7,
+				"horizon": 284.4,
+				"last_horizon": 315.9,
+				"nameless_end": 643.86,
+				"pulse": 216.0,
+				"rings": 439.2,
+				"rupture": 579.6,
+				"territory": 392.4,
+				"thrust": 471.6
+			},
+			"damage_received": 0.0,
+			"element_uses": {
+				"fire": 2,
+				"frost": 2,
+				"lightning": 3,
+				"void": 1
+			},
+			"hits": 0,
+			"hitstop_seconds": 10.867,
+			"hp": 100.0,
+			"landed_actions": 286,
+			"openings": 155,
+			"pattern_count": 155,
+			"pickups": true,
+			"result": "victory",
+			"seconds": 719.8,
+			"seed": 7,
+			"ticks": 42536,
+			"weapon": "W01"
+		},
+		{
+			"attacks": 230,
+			"collected": {
+				"fire": 3,
+				"frost": 2,
+				"lightning": 1
+			},
+			"damage": 6000.0,
+			"damage_by_pattern": {
+				"claw": 298.1,
+				"dash": 343.2,
+				"echo": 382.8,
+				"execution": 351.7,
+				"footprints": 180.4,
+				"fractures": 748.0,
+				"heartbeat": 293.7,
+				"horizon": 321.2,
+				"last_horizon": 521.44,
+				"nameless_end": 517.9,
+				"pulse": 276.1,
+				"rings": 237.6,
+				"rupture": 380.6,
+				"territory": 545.6,
+				"thrust": 569.8
+			},
+			"damage_received": 0.0,
+			"element_uses": {
+				"fire": 6,
+				"frost": 2,
+				"lightning": 3
+			},
+			"hits": 0,
+			"hitstop_seconds": 9.0,
+			"hp": 100.0,
+			"landed_actions": 230,
+			"openings": 172,
+			"pattern_count": 173,
+			"pickups": true,
+			"result": "victory",
+			"seconds": 791.517,
+			"seed": 7,
+			"ticks": 46951,
+			"weapon": "W02"
+		},
+		{
+			"attacks": 378,
+			"collected": {
+				"frost": 1,
+				"lightning": 1,
+				"void": 2
+			},
+			"damage": 6000.0,
+			"damage_by_pattern": {
+				"claw": 320.6,
+				"dash": 257.6,
+				"echo": 523.6,
+				"execution": 383.6,
+				"footprints": 187.6,
+				"fractures": 589.4,
+				"heartbeat": 362.6,
+				"horizon": 278.6,
+				"last_horizon": 428.4,
+				"nameless_end": 589.4,
+				"pulse": 187.6,
+				"rings": 266.0,
+				"rupture": 498.4,
+				"territory": 557.2,
+				"thrust": 584.5
+			},
+			"damage_received": 0.0,
+			"element_uses": {
+				"frost": 1,
+				"lightning": 3,
+				"void": 2
+			},
+			"hits": 0,
+			"hitstop_seconds": 28.133,
+			"hp": 100.0,
+			"landed_actions": 378,
+			"openings": 156,
+			"pattern_count": 156,
+			"pickups": true,
+			"result": "victory",
+			"seconds": 744.583,
+			"seed": 7,
+			"ticks": 42987,
+			"weapon": "W03"
+		},
+		{
+			"attacks": 153,
+			"collected": {
+				"fire": 1,
+				"frost": 1
+			},
+			"damage": 6000.0,
+			"damage_by_pattern": {
+				"dash": 230.4,
+				"echo": 608.0,
+				"execution": 505.6,
+				"footprints": 224.0,
+				"fractures": 492.8,
+				"heartbeat": 460.8,
+				"horizon": 332.8,
+				"last_horizon": 472.0,
+				"nameless_end": 433.6,
+				"rings": 396.8,
+				"rupture": 1024.0,
+				"territory": 384.0,
+				"thrust": 531.2
+			},
+			"damage_received": 0.0,
+			"element_uses": {
+				"fire": 2,
+				"frost": 1
+			},
+			"hits": 0,
+			"hitstop_seconds": 6.067,
+			"hp": 100.0,
+			"landed_actions": 153,
+			"openings": 219,
+			"pattern_count": 219,
+			"pickups": true,
+			"result": "victory",
+			"seconds": 948.317,
+			"seed": 7,
+			"ticks": 56535,
+			"weapon": "W04"
+		},
+		{
+			"attacks": 280,
+			"collected": {
+				"fire": 2,
+				"frost": 1
+			},
+			"damage": 6000.0,
+			"damage_by_pattern": {
+				"dash": 343.4,
+				"echo": 334.4,
+				"execution": 404.8,
+				"footprints": 228.8,
+				"fractures": 748.0,
+				"heartbeat": 162.0,
+				"horizon": 258.4,
+				"last_horizon": 523.6,
+				"nameless_end": 475.2,
+				"rings": 402.8,
+				"rupture": 978.5,
+				"territory": 444.6,
+				"thrust": 695.6
+			},
+			"damage_received": 0.0,
+			"element_uses": {
+				"fire": 4,
+				"frost": 1
+			},
+			"hits": 0,
+			"hitstop_seconds": 9.267,
+			"hp": 100.0,
+			"landed_actions": 247,
+			"openings": 217,
+			"pattern_count": 217,
+			"pickups": true,
+			"result": "victory",
+			"seconds": 942.917,
+			"seed": 7,
+			"ticks": 56019,
+			"weapon": "W05"
+		}
+	],
+	"version": "m4-0.3"
+}

@@ -1,0 +1,46 @@
+{
+	"clock": "60 FPS modeled wall time including hitstop; menu time excluded",
+	"rows": [
+		{
+			"attacks": 288,
+			"collected": {
+
+			},
+			"damage": 6000.0,
+			"damage_by_pattern": {
+				"claw": 237.6,
+				"dash": 241.2,
+				"echo": 460.8,
+				"execution": 446.4,
+				"footprints": 111.6,
+				"fractures": 738.0,
+				"heartbeat": 403.2,
+				"horizon": 370.8,
+				"last_horizon": 345.6,
+				"nameless_end": 612.0,
+				"pulse": 216.0,
+				"rings": 367.2,
+				"rupture": 579.6,
+				"territory": 367.2,
+				"thrust": 572.4
+			},
+			"damage_received": 0.0,
+			"element_uses": {
+
+			},
+			"hits": 0,
+			"hitstop_seconds": 10.767,
+			"hp": 100.0,
+			"landed_actions": 288,
+			"openings": 156,
+			"pattern_count": 156,
+			"pickups": false,
+			"result": "victory",
+			"seconds": 723.167,
+			"seed": 7,
+			"ticks": 42744,
+			"weapon": "W01"
+		}
+	],
+	"version": "m5-0.4"
+}

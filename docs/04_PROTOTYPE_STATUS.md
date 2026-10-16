@@ -2,6 +2,8 @@
 
 2026년 10월 16일 기준. Godot **4.5.2.stable.official.6ce3de25a**, GDScript, Windows. M1과 M2의 플레이 가능한 시제품을 구현했다.
 
+이 문서는 M1·M2 완료 당시의 기록이다. 현재 구현은 [M5 개발 결과](07_M5_STATUS.md)와 README를 따른다.
+
 ## 실행과 조작
 
 프로젝트 폴더에서 다음 명령을 실행한다.
