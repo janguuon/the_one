@@ -1,0 +1,14 @@
+{
+  "version": "m2-0.1",
+  "physics_hz": 60,
+  "arena": {"center": [320,184], "radii": [260,126]},
+  "player": {"hp": 100, "speed": 96, "radius": 6, "dodge_ticks": 24, "dodge_distance": 72, "dodge_inv_start": 3, "dodge_inv_end": 14, "dodge_cooldown": 42, "hurt_ticks": 12, "hurt_inv_ticks": 42, "buffer_ticks": 6},
+  "sword": {"id": "W01", "damage": 18, "reach": 34, "arc_degrees": 100, "signature_arc_degrees": 180, "startup_ticks": 9, "active_ticks": 6, "recovery_ticks": 18, "dodge_cancel_tick": 24, "stack_threshold": 6, "signature_multiplier": 2.2},
+  "fire": {"id": "E01", "charges": 2, "multiplier": 1.35, "dot_damage": 3, "dot_interval": 30, "dot_duration": 120, "flight_ticks": 24, "ground_ticks": 600, "pickup_radius": 10, "max_ground": 2},
+  "boss": {"hp": 1000, "speed": 72, "body_radius": 18, "hurt_radius": 22, "approach_ticks": 90, "approach_distance": 60, "drop_thresholds": [0.2,0.45,0.7]},
+  "patterns": {
+    "claw": {"name": "재의 발톱", "shape": "sector", "telegraph_ticks": 51, "lock_tick": 30, "active_ticks": 6, "recover_ticks": 66, "radius": 56, "arc_degrees": 140, "damage": 28},
+    "rupture": {"name": "첫 균열", "shape": "line", "telegraph_ticks": 120, "lock_tick": 60, "active_ticks": 6, "recover_ticks": 84, "length": 196, "width": 24, "damage": 40},
+    "pulse": {"name": "최초의 맥동", "shape": "ring", "telegraph_ticks": 120, "lock_tick": 0, "recover_ticks": 66, "radius": 28, "width": 8, "speed": 240, "damage": 30}
+  }
+}

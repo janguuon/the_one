@@ -1,0 +1,4 @@
+.godot/
+.tools/
+artifacts/
+*.tmp
